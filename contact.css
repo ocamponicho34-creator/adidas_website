@@ -1,0 +1,234 @@
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+body {
+  background: url(background.jpg) no-repeat center/cover;
+  color: white;
+  font-family: 'Poppins', Arial, sans-serif;
+  position: relative;
+  overflow-y: auto;
+}
+
+/* ================= ADIDAS LOGO ================= */
+.image {
+  width: 300px;
+  height: 300px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  margin-top: -96px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ================= NAVIGATION ================= */
+nav {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  padding: 20px;
+}
+
+nav a {
+  font-family: Roboto;
+  color: #c6c2c2;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 6px;
+  font-size: 25px;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ================= DROPDOWN ================= */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #252424;
+  border-radius: 8px;
+  padding: 10px 0;
+  min-width: 160px;
+  box-shadow: 0 6px 20px rgba(146, 145, 147, 0.5);
+  z-index: 100;
+}
+
+.dropdown-menu li {
+  padding: 8px 20px;
+}
+
+.dropdown-menu li a {
+  font-size: 19px;
+  color: #f6f2f2;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background: #222;
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* ================= RESUME CONTAINER (FIRST CSS) ================= */
+.container {
+  width: 800px;
+  margin: 80px auto;
+  padding: 25px;
+  border-radius: 15px;
+  border: 3px solid #cfd8dc;
+  background: rgba(15, 27, 30, 0.75);
+  backdrop-filter: blur(10px);
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  letter-spacing: 2px;
+}
+
+.header p {
+  color: #ffc107;
+}
+
+/* BOX STYLE */
+.box {
+  border: 2px solid #cfd8dc;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px;
+  background: rgba(0,0,0,0.25);
+}
+
+.full {
+  width: 100%;
+}
+
+/* TOP SECTION */
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* PROFILE IMAGE */
+.profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+}
+
+/* MIDDLE SECTION */
+.middle {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* SKILL BARS */
+.bar {
+  background: #263238;
+  height: 8px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.bar span {
+  display: block;
+  height: 100%;
+  background: #ffc107;
+  border-radius: 10px;
+}
+
+/* PERSONAL SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills span {
+  border: 1px solid white;
+  padding: 6px 12px;
+  border-radius: 10px;
+}
+
+/* ================= FOOTER ================= */
+.footer-long {
+  width: 400%;
+  max-width: 1500px;
+  height: 100px;
+  margin: 100px auto 30px;
+  background: rgba(17, 17, 17, 0.5);
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  box-shadow: 0 12px 35px rgba(235, 224, 224, 0.3);
+}
+
+.icon {
+  width: 66px;
+  opacity: 0.7;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.25);
+  opacity: 1;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .container {
+    width: 95%;
+  }
+
+  .top-section,
+  .middle {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    right: 10px;
+  }
+}
