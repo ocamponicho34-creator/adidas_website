@@ -1,0 +1,247 @@
+
+body{
+   overflow: hidden;
+  background:url(background.png);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+    height: 100vh;
+
+}
+.image{
+  width:300px;
+  height:300px;
+  margin-left:10px;
+  margin-right:1;
+  margin-bottom:30px;
+  margin-top:-96;
+}
+
+
+* {
+  padding:0;
+ margin:0;
+box-sizing:border-box ;
+
+}
+  footer{
+    background-color:#474646
+  }
+
+  .foooter-container{
+    width:100px;
+    padding:70px 30px 20px;
+  }
+
+  .image-icon{
+      display:flex;
+      justify-content:center;
+  }
+   
+  .footer-long {
+    width: 2000%;                 /* makes it long */
+    max-width: 1600px;          /* limit on large screens */
+    height: 100px;               /* makes it bigger */
+    margin: 40px auto;
+    background: #111;
+    border-radius: 10px;
+    margin-top: 100px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    box-shadow: 0 12px 35px rgba(235, 224, 224, 0.6);
+}
+
+/* Icons */
+.icon {
+    width: 66px;                /* bigger icons */
+    opacity: 0.7;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.25);
+    opacity: 1;
+}
+
+     .footer-long {
+    background: rgba(17, 17, 17, 0.5); /* lower = more transparent */
+}
+nav{
+position: absolute;
+    top: 20px;
+    right: 30px;
+}
+nav ul {
+    list-style: none;       /* remove bullets */
+    display: flex;
+    gap: 35px;
+    padding: 20px;
+    margin: 0;
+    margin-left: 1050px;
+    
+   
+}
+
+.about-adidas {
+    max-width: 1200px;             /* wider container */
+    margin: -70px auto;
+    font-family: 'Poppins', sans-serif;
+    color: #dedbdb;
+    display: flex;
+    gap: 20px;                     /* space between boxes */
+    flex-wrap: wrap;               /* allow wrapping on smaller screens */
+    justify-content: center;       /* center boxes horizontally */
+}
+
+.details-box {
+    flex: 1 1 30%;                 /* each box takes ~30% width */
+    min-width: 280px;              /* prevents boxes from getting too small */
+    border: 2px solid #424042;
+    border-radius: 12px;
+    padding: 25px;
+    background-color: #383737;
+    box-shadow: 0 4px 15px rgba(47, 1, 60, 0.1);
+    line-height: 1.6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+/* Optional hover effect */
+.details-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.details-box h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.details-box p {
+    margin: 0;
+}
+nav{
+position: absolute;
+    top: 20px;
+    right: 30px;
+}
+nav ul {
+    list-style: none;       /* remove bullets */
+    display: flex;
+    gap: 35px;
+    padding: 20px;
+    margin: 0;
+    margin-left: 1050px;
+    
+   
+}
+
+nav a {
+    color: #898787;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 6px;
+    font-size: 25px;
+    font-family:Roboto;
+    outline: none;
+    
+}
+
+/* underline animation */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+ nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    margin: 0;
+    padding: 20px;
+}
+
+nav a {
+    font-family:Roboto; 
+    color: #c6c2c2;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+/* underline animation */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s ease;
+}
+nav a:hover::after {
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: none; 
+    left: 0;
+    background: #252424;
+    border-radius: 8px;
+    padding: 10px ;
+    min-width: 140px;
+    flex-direction: column;
+    box-shadow: 0 6px 20px rgba(146, 145, 147, 0.5);
+    z-index: 100;
+}
+
+
+.dropdown-menu li {
+    padding: 8px 20px;
+}
+
+.dropdown-menu li a {
+    color: #eae5e5; 
+    font-size: 19px;
+    display: block;
+    font-family: Roboto;
+}
+
+.dropdown-menu li a:hover {
+    background: #222;
+    border-radius: 5px;
+
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
