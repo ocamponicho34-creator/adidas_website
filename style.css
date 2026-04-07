@@ -1,0 +1,234 @@
+
+body{
+   overflow: hidden;
+  background:url(background.png);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+    height: 100vh;
+
+}
+.image{
+  width:300px;
+  height:300px;
+  margin-left:10px;
+  margin-right:1;
+  margin-bottom:30px;
+  margin-top:-96;
+}
+
+
+* {
+  padding:0;
+ margin:0;
+box-sizing:border-box ;
+
+}
+  footer{
+    background-color:#474646
+  }
+
+  .foooter-container{
+    width:100px;
+    padding:70px 30px 20px;
+  }
+
+  .image-icon{
+      display:flex;
+      justify-content:center;
+  }
+   
+  .footer-long {
+    width: 2000%;                 
+    max-width: 1600px;          
+    height: 100px;              
+    margin: 40px auto;
+    background: #111;
+    border-radius: 10px;
+    margin-top: 250px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    box-shadow: 0 12px 35px rgba(235, 224, 224, 0.6);
+}
+
+.footer-note {
+    position: absolute;          /* keeps icons centered */
+    left: 20px;                  /* distance from left edge */
+    font-size: 20px;             /* bigger font */
+    font-weight: bold;           /* make it bold */
+    font-family: 'Poppins', sans-serif; /* stylish font */
+    color: #555454;              /* gold color for emphasis */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5); /* nice shadow effect */
+    letter-spacing: 1px;         /* spacing between letters */
+    opacity: 1;                  /* fully visible */
+    transition: transform 0.3s ease; /* optional hover animation */
+}
+
+/* Optional hover effect */
+.footer-note:hover {
+    transform: scale(1.1);       /* slightly bigger on hover */
+    color: #eeece8;              /* change color on hover */
+}
+
+
+.icon {
+    width: 66px;               
+    opacity: 0.7;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.25);
+    opacity: 1;
+}
+
+     .footer-long {
+    background: rgba(17, 17, 17, 0.5); 
+}
+nav{
+position: absolute;
+    top: 20px;
+    right: 30px;
+}
+nav ul {
+    list-style: none;       
+    display: flex;
+    gap: 35px;
+    padding: 20px;
+    margin-left: 1050px;
+    
+   
+}
+
+nav a {
+    color: #898787;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 6px;
+    font-size: 25px;
+    font-family:Roboto;
+    outline: none;
+    
+}
+
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s ease;
+}
+
+nav a:hover:after {
+    width: 100%;
+}
+
+ nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    margin: 0;
+    padding: 20px;
+}
+
+nav a {
+    font-family:Roboto; 
+    color: #c6c2c2;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s ease;
+}
+nav a:hover::after {
+    width: 100%;
+} 
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: none;
+    left: 0;
+    background: #252424;
+    border-radius: 8px;
+    padding: 10px ;
+    min-width: 140px;
+    flex-direction: column;
+    box-shadow: 0 6px 20px rgba(146, 145, 147, 0.5);
+    z-index: 100;
+}
+
+
+.dropdown-menu li {
+    padding: 8px 20px;
+}
+
+.dropdown-menu li a {
+    color: #f6f2f2; 
+    font-size: 19px;
+    display: block;
+    font-family: Roboto;
+}
+
+.dropdown-menu li a:hover {
+    background: #222;
+    border-radius: 5px;
+
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.adidas-text {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif; 
+    
+}
+
+
+.subtitle {
+    font-family: 'Bebas Neue', sans-serif; 
+    font-size: 80px;
+    color: #b0a8a8;          
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.tagline {
+    font-size: 20px;
+    color: #bbb3b3;          
+    margin-top: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+
